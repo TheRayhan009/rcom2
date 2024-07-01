@@ -4,10 +4,10 @@ from flask_sqlalchemy import SQLAlchemy
 import json
 
 # Load configuration and blogs
-with open('D:/rayhan-drive/flask/flask1/config.json', 'r', encoding='utf-8') as c:
+with open('/config.json', 'r', encoding='utf-8') as c:
     paramiters = json.load(c)["paramiters"]
 
-with open('D:/rayhan-drive/flask/flask1/blogs.json', 'r', encoding='utf-8') as s:
+with open('/blogs.json', 'r', encoding='utf-8') as s:
     blogs = json.load(s)["blogs"]
 
 # Determine if running on a local server
