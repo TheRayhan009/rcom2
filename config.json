@@ -1,8 +1,8 @@
 {
     "paramiters":{
         "local_server":"True",
-        "local_uri":"mysql://root:@localhost/flask_rayhan",
-        "prodaction_uri":"mysql://root:@localhost/flask_rayhan",
+        "local_uri":"postgresql://rayhan:asyYqpn0WAWD3RbB2rarcVGgPCBGjJeh@dpg-cq16knjv2p9s73cpk8a0-a/rayhansdata",
+        "prodaction_uri":"postgresql://rayhan:asyYqpn0WAWD3RbB2rarcVGgPCBGjJeh@dpg-cq16knjv2p9s73cpk8a0-a/rayhansdata",
         "name":"TheRayhan PY",
         "numberr":"01748834165",
         "gmail":"rayhanthestorymaker@gmail.com",
