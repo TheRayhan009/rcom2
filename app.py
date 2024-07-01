@@ -5,10 +5,10 @@ from flask import Flask , render_template
 from flask_sqlalchemy import SQLAlchemy
 import json
 
-with open('D:/rayhan-drive/flask/flask1/config.json','r', encoding='utf-8')  as c:
+with open('config.json','r', encoding='utf-8')  as c:
     paramiters=json.load(c)["paramiters"]
 
-with open('D:/rayhan-drive/flask/flask1/blogs.json','r', encoding='utf-8')  as s:
+with open('blogs.json','r', encoding='utf-8')  as s:
     blogs=json.load(s)["blogs"]
 
 local_server=True
