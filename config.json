@@ -1,0 +1,21 @@
+{
+    "paramiters":{
+        "local_server":"True",
+        "local_uri":"mysql://root:@localhost/flask_rayhan",
+        "prodaction_uri":"mysql://root:@localhost/flask_rayhan",
+        "name":"TheRayhan PY",
+        "numberr":"01748834165",
+        "gmail":"rayhanthestorymaker@gmail.com",
+        "git_hub":"TheRayhan009",
+        "gmail_username":"rayhanthestorymaker@gmail.com",
+        "gmail_password":"opionmaq",
+        "admin_name":"therayhan009",
+        "admin_pass":"rayhan",
+        "admin_name1":"@",
+        "admin_pass1":"1",
+        "loguser":"therayhan",
+        "logpass":"1",
+        "x":""
+
+    }
+}

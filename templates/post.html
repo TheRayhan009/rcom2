@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post - R.com</title>
+    <link rel="stylesheet" href="static/post.css"> 
+    <link rel="icon" type="image/x-icon" href="static/3.jpg">
+</head>
+<body>
+    <style>
+        /* Reset CSS */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        header h1 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Blog Section */
+        .blog_h1 {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .blog-post {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .blog-post h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .post-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .blog-post p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0px;
+            text-align: center;
+        }
+
+        footer nav ul {
+            list-style-type: none;
+        }
+
+        footer nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        footer nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .git_hub img {
+            width: 40px;
+            height: auto;
+            border-radius: 30px;
+        }
+        header img {
+            background-image: url('flask1/static/3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 10px 20px;
+        }
+        .go-back-btn {
+            /* display: inline-block;
+            margin-left: 620px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: auto;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+            margin-top: 0px; */
+
+            display: inline-block;
+            margin-left: 620px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+            margin-top: -5px;
+        }
+
+        .go-back-btn:hover {
+            background-color: #357dca;
+        }
+    </style>
+
+    <header>
+        <div class="container">
+            <h1><a href="/home">R.com</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="login">Login</a></li>
+                    <li><a href="addpostlogin">Add Post</a></li>
+                    <li><a href="users">User</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="blog_h1">
+        <h1>BLOG {{post.titel}} </h1>
+        <!-- <h2>Latest Blog Posts</h2> -->
+        <div class="blog-post">
+            <h3>{{post.titel}}</h3>
+            <p class="post-meta">Posted on {{post.date}} by About TheRayhan PY</p>
+            <p>{{post.content}}</p>
+            <!-- <a href="https://www.facebook.com/profile.php?id=100070570397043" class="read-more" target="_blank">Read More</a> -->
+        </div>
+    </div>
+    <button class="go-back-btn" onclick="goBack()">Go Back</button>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 R.com. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="login">Login</a></li>
+                </ul>
+                <div class="git_hub">
+                    <a href="https://github.com/TheRayhan009" target="_blank">
+                        <img src="https://iili.io/JMdZjqP.jpg" alt="GitHub" class="github-logo">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Add a button to go back to the previous page -->
+    
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

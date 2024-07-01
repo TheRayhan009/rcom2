@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.com - Login</title>
+    <link rel="icon" type="image/x-icon" href="static/3.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 20px; /* Increase padding to give space */
+            text-align: left; /* Align text to left */
+            display: flex; /* Use flexbox for positioning */
+            justify-content: space-between; /* Align items with space between */
+            align-items: center; /* Align items vertically */
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; /* Remove default margin */
+        }
+        .header li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .header li a {
+            color: #fff;
+            text-decoration: auto;
+        }
+        .container {
+            width: 300px;
+            margin: 167px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container p{
+            margin: 10px 0;
+            text-align: center;
+        }
+        .container a{
+            color: #007bff;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .header li a:hover {
+            color: gray; /* Change color on hover */
+        }
+
+        /* Footer */
+        footer nav ul li a:hover {
+            color: gray; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="header">
+        <li><h1><a href="/home">R.com</a></h1></li>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="blog">Blog</a></li>
+        </ul>
+    </div> -->
+    <div class="container">
+        <h2>Login to R.com</h2>
+        <form action="#" method="post">
+            <input type="text" name="username" placeholder="Username or Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+        <p>Don't have an account? <a href="first_sign">Sign up</a></p>
+    </div>
+</body>
+</html>

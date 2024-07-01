@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.com - Home</title>
+    <link rel="icon" type="image/x-icon" href="static/3.jpg">
+</head>
+<body>
+    <link rel="stylesheet" href="static/index.css">
+    <header>
+        <div class="container">
+            <li><h1><a href="/home">R.com</a></h1></li>
+            <nav>
+                <ul>
+                    
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    <li><a href="login">Login</a></li>
+                    <li><a href="sign">Sign Up</a></li>
+                    <li><a href="addpostlogin">Add Post</a></li>
+                    <!-- <li><a href="users">User</a></li> -->
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+        <h2>R.com Users</h2>
+        <table>
+            <tr>
+                <th>Sno</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Birthday</th>
+                <th>Age</th>
+            </tr>
+            {% for users in users %}
+            <tr>
+                <td>{{users.sno}}</td>
+                <td>{{users.first_name}}</td>
+                <td>{{users.last_name}}</td>
+                <td>{{users.phone_num}}</td>
+                <td>{{users.email}}</td>
+                <td>{{users.birthday}}</td>
+                <td>{{users.age}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 R.com. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="about">About</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    <li><a href="login">Login</a></li>
+                    <br>
+                    <div class="git_hub">
+                    <a href="https://github.com/TheRayhan009" target="_blank">
+                        <img src="https://iili.io/JMdZjqP.jpg" alt="JMdZjqP.jpg" alt="GitHub" class="github-logo">
+                    </a>
+                </div>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
